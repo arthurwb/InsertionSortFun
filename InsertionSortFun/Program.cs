@@ -8,8 +8,11 @@ namespace InsertionSortFun
 {
     class Program
     {
-        static void Main(string[] args)
-        {
+		static void Main(string[] args)
+		{
+			IntegerTest();
+		}
+		public static void IntegerTest() { 
 			//declaring and instantiating a test array of unsorted numbers
 			int[] test = new int[9];
 			test[0] = 6;
@@ -32,5 +35,18 @@ namespace InsertionSortFun
 				Console.WriteLine(result[i]);
 			}
 		}
-    }
+		public static void StringTest()
+        {
+			String[] lines = System.IO.File.ReadAllLines("english.txt");
+			//Declaring and instantiating the sort object
+			InsertionSort sorting = new InsertionSort();
+			//calling the sort method and assigning the returned array to the result array
+			int[] result = sorting.sort(test);
+			//Cycle through and print the result array
+/*			for (int i = 0; i < result.Length; i++)
+			{
+				Console.WriteLine(result[i]);
+			}*/
+		}
+	}
 }
