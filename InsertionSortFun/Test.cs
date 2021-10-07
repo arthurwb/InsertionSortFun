@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+ * Bill Nicholsonm
+ * nicholdw@ucmail.uc.edu
+ */
+using System;
 namespace InsertionSortFun
 {
 	public class Test
