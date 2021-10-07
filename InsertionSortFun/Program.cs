@@ -12,6 +12,7 @@ namespace InsertionSortFun
 		{
 			Test.IntegerTest();
 			//Test.StringTest();  Incomplete
+			Test.StringTest();
 		}
 	}
 }

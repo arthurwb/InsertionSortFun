@@ -3,6 +3,8 @@
  * nicholdw@ucmail.uc.edu
  */
 
+using System;
+
 namespace InsertionSortFun
 {
 	/// <summary>
@@ -35,6 +37,29 @@ namespace InsertionSortFun
 			}
 			//Returns the sorted array
 			return numArray;
+		}
+		public String[] sort(String[] strArray)
+		{
+			//Cycle through the original array
+			for (int i = 1; i < strArray.Length; i++)
+			{
+				//Set the current number at the index to x for safe keeping
+				String x = strArray[i];
+				//Set j to equal the index before the current index
+				int j = i - 1;
+				//Loop determines if the immediate previous indexes number is greater than the current number, and if it is, move the current number back 1 index
+				while (j >= 0 && strArray[j].CompareTo(x) > 0)
+				{
+					//Replace the number at index i with the number at index j
+					strArray[j + 1] = strArray[j];
+					//Subtracts 1 from j to move backwards through the array
+					j = j - 1;
+				}
+				//Adds 1 back to j and inserts the current indexes number back into the array where it belongs
+				strArray[j + 1] = x;
+			}
+			//Returns the sorted array
+			return strArray;
 		}
 	}
 }

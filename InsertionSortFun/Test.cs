@@ -33,17 +33,17 @@ namespace InsertionSortFun
 		}
 		public static void StringTest()
 		{
-#if False
+#if True
 			String[] lines = System.IO.File.ReadAllLines("english.txt");
 			//Declaring and instantiating the sort object
 			InsertionSort sorting = new InsertionSort();
 			//calling the sort method and assigning the returned array to the result array
-			int[] result = sorting.sort(test);
+			String[] result = sorting.sort(lines);
 			//Cycle through and print the result array
-			/*			for (int i = 0; i < result.Length; i++)
-						{
-							Console.WriteLine(result[i]);
-						}*/
+			for (int i = 0; i < result.Length; i++)
+			{
+				Console.WriteLine(result[i]);
+			}
 #endif
 		}
 	}
