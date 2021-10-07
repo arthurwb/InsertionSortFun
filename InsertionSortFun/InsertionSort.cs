@@ -1,11 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+ * Bill Nicholsonm
+ * nicholdw@ucmail.uc.edu
+ */
 
 namespace InsertionSortFun
 {
+	/// <summary>
+	/// Perform insertion sort operations
+	/// </summary>
     class InsertionSort
 	{
 		
