@@ -11,7 +11,7 @@ namespace InsertionSortFun
 		static void Main(string[] args)
 		{
 			Test.IntegerTest();
-			Test.StringTest();
+			//Test.StringTest();  Incomplete
 		}
 	}
 }

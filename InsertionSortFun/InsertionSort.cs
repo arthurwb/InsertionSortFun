@@ -10,7 +10,6 @@ namespace InsertionSortFun
 	/// </summary>
     class InsertionSort
 	{
-		
 	/// <summary>An insertion sort</summary>
 	/// <param name="numArray">The array to be sorted</param>
 	/// <returns>the sorted array</returns>
